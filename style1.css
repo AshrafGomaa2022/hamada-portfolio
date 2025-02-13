@@ -72,3 +72,45 @@ h2:hover {
     color: #ffffff;
     transform: scale(1.1);
 }
+
+
+/* تصميم متجاوب للأجهزة الصغيرة مثل الموبايل */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* يجعل المحتوى متناسق مع شاشة الموبايل */
+        padding: 20px;
+    }
+
+    .profile-img {
+        width: 120px; /* تصغير حجم الصورة */
+        height: 120px;
+    }
+
+    nav {
+        flex-direction: column; /* يجعل القائمة رأسية بدل أفقية */
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px;
+        width: 100%; /* يجعل الروابط بعرض الشاشة */
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .section {
+        width: 95%;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    h2 {
+        font-size: 20px; /* تصغير العناوين */
+    }
+
+    p {
+        font-size: 16px; /* تحسين حجم الخط للقراءة بسهولة */
+    }
+}
+
